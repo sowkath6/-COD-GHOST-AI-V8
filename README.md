@@ -39,3 +39,14 @@ Wireless debugging pairing/restart is handled in the Shizuku app. This companion
 - Device diagnostics are Android readings, not CODM's internal FPS or server ping.
 - No game injection, memory editing, aimbot, ESP/wallhack, recoil automation, paid currency unlocks, anti-cheat bypass, or account modification.
 - Shizuku is not root and does not grant unrestricted access.
+
+## Local account login (V8.1 update)
+
+The login screen supports creating one local account on the current Android installation. Choose a username (3–24 letters/numbers/dot/dash/underscore) and a password of at least 8 characters, then confirm it. The app stores a random salt and PBKDF2-HMAC-SHA256 password hash (150,000 iterations), not the plaintext password. This is device-local authentication only: it does not create a cloud account, sync across devices, or provide password recovery. Clearing app data or uninstalling may remove the local account. Do not use your COD Mobile password. For multi-device accounts and recovery, integrate a proper backend such as Supabase Auth.
+
+
+## V8.2 cinematic launch screen
+
+This update adds a 4.4-second HTML/CSS launch sequence using the supplied helmet artwork, animated cyan/violet HUD rings, a scan sweep, logo reveal, brand reveal, progress line, and a Skip Intro control. The sequence fades into the existing local-login screen. Android launcher icons remain static; the animated sequence runs when the app opens. The splash works offline and does not need permissions.
+
+Build artifact: `COD-GHOST-AI-V8.2-debug`.

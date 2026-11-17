@@ -7,5 +7,5 @@ dependencies {
 android {
  namespace = "com.ghostai.v8"
  compileSdk = 36
- defaultConfig { applicationId = "com.ghostai.v8"; minSdk = 26; targetSdk = 35; versionCode = 81; versionName = "8.1.0" }
+ defaultConfig { applicationId = "com.ghostai.v8"; minSdk = 26; targetSdk = 35; versionCode = 82; versionName = "8.2.0" }
 }
